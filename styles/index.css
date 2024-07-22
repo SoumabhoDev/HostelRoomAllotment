@@ -1,0 +1,277 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+header {
+  height: 10vh;
+  background-color: rgb(134, 18, 211);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7vh;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  height: 90vh;
+  max-width: 100vw;
+}
+.container .left {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+.container .left .image {
+  order: 1;
+  height: 30%;
+  width: 70%;
+  transform: translateY(30vh);
+  animation: hostel_anim_left 10s 0s infinite;
+}
+
+.container .left .imageL2 {
+  height: 30%;
+  width: 70%;
+  transform: translateY(50vh);
+  animation: hostel_anim_left2 10s 1s infinite;
+}
+
+.container .centre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 50%;
+}
+.container .right {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.container .right .image {
+  height: 30%;
+  width: 70%;
+  transform: translateX(3vw) translateY(10vh);
+  animation: hostel_anim_right 10s 2s infinite;
+}
+.container .right .imageR2 {
+  height: 40%;
+  width: 70%;
+  transform: translateX(3vw) translateY(10vh);
+  animation: hostel_anim_right2 10s 4s infinite;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 45%;
+  width: 80%;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 20px;
+  border: 2px solid red;
+}
+@keyframes hostel_anim_left {
+  0% {
+  }
+  50% {
+    transform: translateY(25vh);
+  }
+  100% {
+    transform: translateY(30vh);
+  }
+}
+@keyframes hostel_anim_left2 {
+  0% {
+  }
+  50% {
+    transform: translateY(45vh);
+  }
+  100% {
+    transform: translateY(50vh);
+  }
+}
+@keyframes hostel_anim_right {
+  0% {
+  }
+  50% {
+    transform: translateY(5vh);
+  }
+  100% {
+    transform: translateX(3vw) translateY(10vh);
+  }
+}
+@keyframes hostel_anim_right2 {
+  0% {
+  }
+  50% {
+    transform: translateX(6vw) translateY(5vh);
+  }
+  100% {
+    transform: translateX(3vw) translateY(10vh);
+  }
+}
+#user {
+  margin-top: 1vh;
+  font-size: larger;
+  height: 25%;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid rgb(159, 8, 219);
+  box-shadow: 3px 3px 3px gray;
+  outline: none;
+}
+#user:focus {
+  border-color: rgb(224, 16, 224) !important;
+}
+#password {
+  font-size: larger;
+  height: 25%;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid rgb(159, 8, 219);
+  box-shadow: 3px 3px 3px gray;
+  outline: none;
+}
+#password:focus {
+  border-color: rgb(224, 16, 224) !important;
+}
+#email {
+  font-size: larger;
+  height: 25%;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid rgb(159, 8, 219);
+  box-shadow: 3px 3px 3px gray;
+  outline: none;
+}
+#email:focus {
+  border-color: rgb(224, 16, 224) !important;
+}
+.login_button {
+  height: 18%;
+  width: 20%;
+  font-size: large;
+  border-radius: 5px;
+  border: 2px solid darkslateblue;
+  background-color: rgb(134, 18, 211);
+  color: white;
+}
+.login_button:hover {
+  cursor: pointer;
+}
+.login_page_button {
+  height: 8%;
+  width: 25%;
+  font-size: large;
+  border-radius: 5px 5px 0px 0px;
+  margin-right: 1vw;
+  background-color: red;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  border-bottom: 0px solid red;
+  color: white;
+}
+.login_page_button:hover {
+  cursor: pointer;
+}
+.signup_page_button {
+  height: 8%;
+  width: 25%;
+  font-size: large;
+  border-radius: 5px 5px 0px 0px;
+  margin-left: 1vw;
+  background-color: white;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  border-bottom: 0px solid red;
+  color: red;
+}
+.signup_page_button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  @keyframes hostel_anim_left_mob {
+    0% {
+    }
+    50% {
+      transform: translateX(3vw);
+    }
+    100% {
+      transform: translateY(1vh) translateX(0vw);
+    }
+  }
+  @keyframes hostel_anim_left2_mob {
+    0% {
+    }
+    50% {
+      transform: translateX(3vw);
+    }
+    100% {
+      transform: translateX(0vw);
+    }
+  }
+  .form {
+    width: 90%;
+    height: 80%;
+  }
+  header {
+    font-size: 5vh;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container .centre {
+    height: 50%;
+    width: 100%;
+  }
+  .container .left {
+    height: 20%;
+    width: 100%;
+  }
+  .container .right {
+    height: 20%;
+    width: 100%;
+    flex-direction: row;
+  }
+  .container .left .image {
+    transform: translateY(1vh);
+    margin-right: 15vw;
+    height: 80%;
+    width: 40%;
+    animation: hostel_anim_left_mob 10s 0s infinite;
+  }
+  .container .left .imageL2 {
+    transform: translateY(0vh);
+    margin-left: 15vw;
+    height: 80%;
+    width: 40%;
+    animation: hostel_anim_left2_mob 10s 2s infinite;
+  }
+  .container .right .image {
+    transform: translateX(0vw) translateY(1vh);
+    margin-right: 15vw;
+    height: 80%;
+    width: 40%;
+    animation: hostel_anim_left_mob 10s 1s infinite;
+  }
+  .container .right .imageR2 {
+    transform: translateX(0vw) translateY(0vh);
+    margin-left: 15vw;
+    height: 90%;
+    width: 40%;
+    animation: hostel_anim_left2_mob 10s 4s infinite;
+  }
+}
