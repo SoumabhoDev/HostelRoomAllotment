@@ -227,7 +227,7 @@ header {
     height: 80%;
   }
   header {
-    font-size: 5vh;
+    font-size: 3vh;
   }
   .container {
     flex-direction: column;
