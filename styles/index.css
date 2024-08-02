@@ -119,41 +119,16 @@ header {
     transform: translateX(3vw) translateY(10vh);
   }
 }
-#user {
-  margin-top: 1vh;
+.main_input {
   font-size: larger;
   height: 25%;
   width: 80%;
   border-radius: 8px;
   border: 1px solid rgb(159, 8, 219);
-  box-shadow: 3px 3px 3px gray;
+  box-shadow: 1.5px 1.5px 1.5px gray;
   outline: none;
 }
-#user:focus {
-  border-color: rgb(224, 16, 224) !important;
-}
-#password {
-  font-size: larger;
-  height: 25%;
-  width: 80%;
-  border-radius: 8px;
-  border: 1px solid rgb(159, 8, 219);
-  box-shadow: 3px 3px 3px gray;
-  outline: none;
-}
-#password:focus {
-  border-color: rgb(224, 16, 224) !important;
-}
-#email {
-  font-size: larger;
-  height: 25%;
-  width: 80%;
-  border-radius: 8px;
-  border: 1px solid rgb(159, 8, 219);
-  box-shadow: 3px 3px 3px gray;
-  outline: none;
-}
-#email:focus {
+.main_input:focus {
   border-color: rgb(224, 16, 224) !important;
 }
 .login_button {
@@ -275,13 +250,7 @@ header {
     width: 40%;
     animation: hostel_anim_left2_mob 10s 4s infinite;
   }
-  #user {
-    width: 90%;
-  }
-  #password {
-    width: 90%;
-  }
-  #email {
+  .main_input {
     width: 90%;
   }
   .login_button {

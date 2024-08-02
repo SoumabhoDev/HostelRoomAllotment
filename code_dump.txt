@@ -1,0 +1,110 @@
+PUT THIS IN BODY
+#user {
+  margin-top: 1vh;
+  font-size: larger;
+  height: 25%;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid rgb(159, 8, 219);
+  box-shadow: 3px 3px 3px gray;
+  outline: none;
+}
+#user:focus {
+  border-color: rgb(224, 16, 224) !important;
+}
+#password {
+  font-size: larger;
+  height: 25%;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid rgb(159, 8, 219);
+  box-shadow: 3px 3px 3px gray;
+  outline: none;
+}
+#password:focus {
+  border-color: rgb(224, 16, 224) !important;
+}
+#email {
+  font-size: larger;
+  height: 25%;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid rgb(159, 8, 219);
+  box-shadow: 3px 3px 3px gray;
+  outline: none;
+}
+#email:focus {
+  border-color: rgb(224, 16, 224) !important;
+}
+#college {
+  margin-top: 1vh;
+  font-size: larger;
+  height: 25%;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid rgb(159, 8, 219);
+  box-shadow: 3px 3px 3px gray;
+  outline: none;
+}
+#college:focus {
+  border-color: rgb(224, 16, 224) !important;
+}
+#year {
+  font-size: larger;
+  height: 25%;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid rgb(159, 8, 219);
+  box-shadow: 3px 3px 3px gray;
+  outline: none;
+}
+#year:focus {
+  border-color: rgb(224, 16, 224) !important;
+}
+#password_signup {
+  font-size: larger;
+  height: 25%;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid rgb(159, 8, 219);
+  box-shadow: 3px 3px 3px gray;
+  outline: none;
+}
+#password_signup:focus {
+  border-color: rgb(224, 16, 224) !important;
+}
+#password_confirm_signup {
+  font-size: larger;
+  height: 25%;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid rgb(159, 8, 219);
+  box-shadow: 3px 3px 3px gray;
+  outline: none;
+}
+#password_confirm_signup:focus {
+  border-color: rgb(224, 16, 224) !important;
+}
+----------------------------------------------------------------PUT THIS IN MOBILE MEDIA FRAME-------------------------------------------------------
+
+#user {
+    width: 90%;
+  }
+  #password {
+    width: 90%;
+  }
+  #email {
+    width: 90%;
+  }
+  #college {
+    width: 90%;
+  }
+  #year {
+    width: 90%;
+  }
+  #password_signup {
+    width: 90%;
+  }
+  #password_confirm_signup {
+    width: 90%;
+  }
