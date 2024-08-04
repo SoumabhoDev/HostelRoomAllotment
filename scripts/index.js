@@ -84,7 +84,7 @@ function login_page() {
 function signup_button() {
   var mediaQuery = window.matchMedia("(max-width:700px)");
   form.innerHTML =
-    '<input class="main_input" id="college" placeholder="Enter College Name" required /><input class="main_input" id="year" placeholder="Enter Year in Integer" required/><input class="main_input" id="password_signup" placeholder="Enter Password" type="password" required/><input class="main_input" id="password_confirm_signup" placeholder="Confirm Password" type="password"/><button onclick="createUser()" id="get_otp" type="button" class="login_button">Get OTP</button>';
+    '<input class="main_input" id="college" placeholder="Enter College Name" required /><input class="main_input" id="year" placeholder="Enter Year in Integer" required/><input class="main_input" id="password_signup" placeholder="Enter Password" type="password" required/><input class="main_input" id="password_confirm_signup" placeholder="Confirm Password" type="password"/><button id="get_otp" type="button" class="login_button">Get OTP</button>';
   if (mediaQuery.matches) {
     form.setAttribute("style", "height:85%");
   } else {

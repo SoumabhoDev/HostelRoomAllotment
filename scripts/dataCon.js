@@ -50,3 +50,5 @@ async function createUser() {
     console.error("Error adding document: ", e);
   }
 }
+
+eve.onclick = createUser();
