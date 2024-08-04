@@ -61,5 +61,7 @@ document.onkeyup = (event) => {
     email = document.getElementById("email").value;
     console.log(username);
   }
-  document.getElementById("get_otp").onclick = createUser;
+  try {
+    document.getElementById("get_otp").onclick = createUser;
+  } catch (error) {}
 };
