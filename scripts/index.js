@@ -3,6 +3,50 @@ const login_page_button = document.querySelector(".login_page_button");
 const signup_page_button = document.querySelector(".signup_page_button");
 const inputs = document.getElementsByClassName("main_input");
 
+/*
+document.addEventListener(
+  "keydown",
+  function (event) {
+    if (event.code == 123) {
+      alert(
+        "This function has been disabled to prevent you from stealing my code!"
+      );
+      return false;
+    } else if (event.ctrlKey && event.shiftKey && event.code == 73) {
+      alert(
+        "This function has been disabled to prevent you from stealing my code!"
+      );
+      return false;
+    } else if (event.ctrlKey && event.code == 85) {
+      alert(
+        "This function has been disabled to prevent you from stealing my code!"
+      );
+      return false;
+    }
+  },
+  false
+);
+
+if (document.addEventListener) {
+  document.addEventListener(
+    "contextmenu",
+    function (e) {
+      alert(
+        "This function has been disabled to prevent you from stealing my code!"
+      );
+      e.preventDefault();
+    },
+    false
+  );
+} else {
+  document.attachEvent("oncontextmenu", function (e) {
+    alert(
+      "This function has been disabled to prevent you from stealing my code!"
+    );
+    e.returnValue = false;
+  });
+}
+*/
 function signup_page() {
   var mediaQuery = window.matchMedia("(max-width:700px)");
   form.innerHTML =
@@ -40,7 +84,7 @@ function login_page() {
 function signup_button() {
   var mediaQuery = window.matchMedia("(max-width:700px)");
   form.innerHTML =
-    '<input class="main_input" id="college" placeholder="Enter College Name" required /><input class="main_input" id="year" placeholder="Enter Year in Integer" required/><input class="main_input" id="password_signup" placeholder="Enter Password" type="password" required/><input class="main_input" id="password_confirm_signup" placeholder="Confirm Password" type="password"/><input id="get_otp" type="button" value="Get OTP" class="login_button" />';
+    '<input class="main_input" id="college" placeholder="Enter College Name" required /><input class="main_input" id="year" placeholder="Enter Year in Integer" required/><input class="main_input" id="password_signup" placeholder="Enter Password" type="password" required/><input class="main_input" id="password_confirm_signup" placeholder="Confirm Password" type="password"/><button onclick="createUser()" id="get_otp" type="button" class="login_button">Get OTP</button>';
   if (mediaQuery.matches) {
     form.setAttribute("style", "height:85%");
   } else {
